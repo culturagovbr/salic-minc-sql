@@ -10,7 +10,7 @@ drop TRIGGER [T_Usu_Upd_senha];
 -- 2- atualizando a senha de todos os usuario para 123456.
 UPDATE  Tabelas.dbo.Usuarios
 set usu_senha = '&nH4<!VzM(hP~n`'
-where usu_senha is not NULL ;
+where usu_senha is not NULL;
 
 -- 3- Adiciona a trigger novamente.
 CREATE TRIGGER [T_Usu_Upd_senha] ON [dbo].[Usuarios] 
