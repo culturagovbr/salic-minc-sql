@@ -1,3 +1,5 @@
+delete from SAC.dbo.Estados;
+
 INSERT INTO SAC.dbo.Estados (id,descricao,fluxoId,proximo) VALUES 
 (4,'Aguardando Analise tecnica',1,'{"id":4,"class":"AvaliacaoResultados_Events_Encaminhar","path":"/modules/avaliacao-resultados/events/Encaminhar.php","proximo":{"5":{"class":"AvaliacaoResultados_Events_Encaminhar","path":"/modules/avaliacao-resultados/events/Encaminhar.php"}}}')
 ,(5,'Em Analise Tecnica',1,'{"id":5,"class":"AvaliacaoResultados_Events_FinalizarParecer","path":"/modules/avaliacao-resultados/events/FinalizarParecer.php","proximo":{"5":{"class":"AvaliacaoResultados_Events_Encaminhar","path":"/modules/avaliacao-resultados/events/Encaminhar.php"},"6":{"class":"AvaliacaoResultados_Events_FinalizarParecer","path":"/modules/avaliacao-resultados/events/FinalizarParecer.php"}}}')
@@ -13,3 +15,5 @@ INSERT INTO SAC.dbo.Estados (id,descricao,fluxoId,proximo) VALUES
 INSERT INTO SAC.dbo.Estados (id,descricao,fluxoId,proximo) VALUES 
 (16,'Aguardando Assinatura do Secretario no Laudo Final',1,'{"id":16,"proximo":{"10":{"class":"AvaliacaoResultados_Events_Devolver","path":"/modules/avaliacao-resultados/events/Devolver.php"}}}')
 ;
+
+SELECT * from  SAC.dbo.Estados;
